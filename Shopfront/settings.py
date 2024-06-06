@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'store',
     'tags',
     'likes',
+    'store_custom',
 ]
 
 MIDDLEWARE = [
@@ -85,6 +86,21 @@ DATABASES = {
     }
 }
 
+
+
+'''Postgres database configure'''
+
+# DATABASES = {
+#     'default': {
+#         #'ENGINE': 'django.db.backends.sqlite3',
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'shopfront',
+#         'USER': 'postgres',
+#         'PASSWORD': 'Mydata@',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators

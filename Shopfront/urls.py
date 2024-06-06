@@ -17,6 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+
+admin.site.site_header = "Shopfront Admin"
+admin.site.index_title = "Nasim"
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('play/', include('play.urls'))
