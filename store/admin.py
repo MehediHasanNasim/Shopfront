@@ -34,8 +34,8 @@ class ProductAdmin(admin.ModelAdmin):
 
 @admin.register(Customer)
 class CustomerAdmin(admin.ModelAdmin):
-    list_display = ['first_name', 'last_name', 'member_ship']
-    list_editable = ['member_ship']
+    list_display = ['first_name', 'last_name', 'membership']
+    list_editable = ['membership']
     ordering = ['first_name', 'last_name']
     search_fields = ['first_name__istartswith', 'last_name__istartswith']
 
@@ -63,9 +63,15 @@ class CollectionAdmin(admin.ModelAdmin):
         return collection.products_count
     
     def get_queryset(self, request):
-        return super().get_queryset(request).annotate(
-            products_count=Count('product')
+        queryset = super().get_queryset(request)
+        queryset = queryset.annotate(
+            products_count=Count('products')  # Note: Use 'products' instead of 'product'
         )
+        return queryset
+    # def get_queryset(self, request):
+    #     return super().get_queryset(request).annotate(
+    #         products_count=Count('product')
+    #     )
 
 
 admin.site.register(Promotion)
