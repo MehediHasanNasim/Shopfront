@@ -30,6 +30,11 @@ class ProductSerializer(serializers.ModelSerializer):
         return product.unit_price * Decimal(1.1)
     
     
+class ReviewSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Review
+        fields = ['id', 'date', 'name', 'description', 'product']
+    
 
 ''' validation example'''
     # def validate(self, data):
