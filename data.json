@@ -1,0 +1,484 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-07-01T12:25:01.834Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "phone",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-07-01T12:25:04.992Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "1",
+    "object_repr": "iphone",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-07-01T12:25:35.804Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Eid sell",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-07-01T12:25:41.359Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "2",
+    "object_repr": "samsung",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2024-07-01T12:26:11.748Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "kids",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2024-07-01T12:26:18.110Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "3",
+    "object_repr": "chocolate",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2024-07-01T12:26:42.286Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "4",
+    "object_repr": "ice cream",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2024-07-01T12:26:54.141Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "puja sell",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2024-07-01T12:27:34.779Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "nasim1 hasan1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2024-07-01T12:28:04.268Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "neaz1 uddin",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2024-07-01T12:29:21.678Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Order object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"order item\", \"object\": \"OrderItem object (1)\"}}, {\"added\": {\"name\": \"order item\", \"object\": \"OrderItem object (2)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2024-07-01T12:36:56.036Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "8",
+    "object_repr": "Order object (8)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"order item\", \"object\": \"OrderItem object (3)\"}}, {\"added\": {\"name\": \"order item\", \"object\": \"OrderItem object (4)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2024-07-01T12:38:22.099Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Address object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2024-07-01T12:38:34.309Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Address object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$cfivffqAfq9G6WKhsjQ3dn$UKKQDUa1ImOLJMX/M8w0HxXaCxDXMThu49bC2ByrCzA=",
+    "last_login": "2024-08-01T10:58:15.560Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@a.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-07-01T12:24:03.346Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "09f1l4zyccl2qcjb77fvecyahscsg4hq",
+  "fields": {
+    "session_data": ".eJxVjDkOwjAUBe_iGln-doJtSvqcwfpbcAAlUpYKcXeIlALaNzPvZQpuay3bonMZxFwMmNPvRsgPHXcgdxxvk-VpXOeB7K7Ygy62m0Sf18P9O6i41G8d-jYwBY0tADQ5iyDFxNyry-iUyEEKJBRzagQ8R3T9ObEmBo8eg3l_APePOIE:1sSyBT:Yg44SsFJ1BuYhH1jLkpJ8592O4PZauO-3cl7G981yOY",
+    "expire_date": "2024-07-28T12:18:31.813Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "46uq39ba48pt3ox23q51ugt7v4qflmvm",
+  "fields": {
+    "session_data": ".eJxVjDkOwjAUBe_iGln-doJtSvqcwfpbcAAlUpYKcXeIlALaNzPvZQpuay3bonMZxFwMmNPvRsgPHXcgdxxvk-VpXOeB7K7Ygy62m0Sf18P9O6i41G8d-jYwBY0tADQ5iyDFxNyry-iUyEEKJBRzagQ8R3T9ObEmBo8eg3l_APePOIE:1sOG4q:I7rziNsw8hoDYJUlvr4xMebHuKkVBcaPNUTpHDe0HWM",
+    "expire_date": "2024-07-15T12:24:12.306Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "6j58m09ffooa2bjo91qyf0avt697ly3t",
+  "fields": {
+    "session_data": ".eJxVjDkOwjAUBe_iGln-doJtSvqcwfpbcAAlUpYKcXeIlALaNzPvZQpuay3bonMZxFwMmNPvRsgPHXcgdxxvk-VpXOeB7K7Ygy62m0Sf18P9O6i41G8d-jYwBY0tADQ5iyDFxNyry-iUyEEKJBRzagQ8R3T9ObEmBo8eg3l_APePOIE:1sZTQj:l5S544Q2mXwonZOLwQCWjlgp3km71JkblMwdFLIeDSI",
+    "expire_date": "2024-08-15T10:53:09.698Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "7cw5eaatz1lxhez955sdvp20zqhcwv7j",
+  "fields": {
+    "session_data": ".eJxVjDkOwjAUBe_iGln-doJtSvqcwfpbcAAlUpYKcXeIlALaNzPvZQpuay3bonMZxFwMmNPvRsgPHXcgdxxvk-VpXOeB7K7Ygy62m0Sf18P9O6i41G8d-jYwBY0tADQ5iyDFxNyry-iUyEEKJBRzagQ8R3T9ObEmBo8eg3l_APePOIE:1sZTGa:GDWe3KJQkYOF14czTGXLku5das0aX6sLjns-HxzvNkE",
+    "expire_date": "2024-08-15T10:42:40.749Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "tqfbcy63c6ob44df03ccs8y83d64jak6",
+  "fields": {
+    "session_data": ".eJxVjDkOwjAUBe_iGln-doJtSvqcwfpbcAAlUpYKcXeIlALaNzPvZQpuay3bonMZxFwMmNPvRsgPHXcgdxxvk-VpXOeB7K7Ygy62m0Sf18P9O6i41G8d-jYwBY0tADQ5iyDFxNyry-iUyEEKJBRzagQ8R3T9ObEmBo8eg3l_APePOIE:1sZTVf:LdJfLNE3xxDbpPMCdecQjMSXWB0o6b2GrkagO23Dm9c",
+    "expire_date": "2024-08-15T10:58:15.562Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ye957cchgnerzlhfq33qkzbyp0gdpb6i",
+  "fields": {
+    "session_data": ".eJxVjDkOwjAUBe_iGln-doJtSvqcwfpbcAAlUpYKcXeIlALaNzPvZQpuay3bonMZxFwMmNPvRsgPHXcgdxxvk-VpXOeB7K7Ygy62m0Sf18P9O6i41G8d-jYwBY0tADQ5iyDFxNyry-iUyEEKJBRzagQ8R3T9ObEmBo8eg3l_APePOIE:1sSyGQ:Tp2HF6LV79mQDRLuvk6GVG89wdN6-a3Ks4ydJvIueWA",
+    "expire_date": "2024-07-28T12:23:38.335Z"
+  }
+},
+{
+  "model": "store.promotion",
+  "pk": 1,
+  "fields": {
+    "description": "Eid sell",
+    "discount": 20.0
+  }
+},
+{
+  "model": "store.promotion",
+  "pk": 2,
+  "fields": {
+    "description": "puja sell",
+    "discount": 30.0
+  }
+},
+{
+  "model": "store.collection",
+  "pk": 1,
+  "fields": {
+    "title": "phone",
+    "featured_product": null
+  }
+},
+{
+  "model": "store.collection",
+  "pk": 2,
+  "fields": {
+    "title": "kids",
+    "featured_product": null
+  }
+},
+{
+  "model": "store.collection",
+  "pk": 3,
+  "fields": {
+    "title": "accessories",
+    "featured_product": null
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1,
+  "fields": {
+    "title": "iphone",
+    "slug": "iphone",
+    "description": "sdfdgfger",
+    "unit_price": "80000.00",
+    "inventory": 25,
+    "last_update": "2024-07-01T12:25:04.980Z",
+    "collection": 1,
+    "promotions": []
+  }
+},
+{
+  "model": "store.product",
+  "pk": 2,
+  "fields": {
+    "title": "samsung",
+    "slug": "samsung",
+    "description": "rteggdfgdfg",
+    "unit_price": "30000.00",
+    "inventory": 60,
+    "last_update": "2024-07-01T12:25:41.348Z",
+    "collection": 1,
+    "promotions": [
+      1
+    ]
+  }
+},
+{
+  "model": "store.product",
+  "pk": 3,
+  "fields": {
+    "title": "chocolate",
+    "slug": "chocolate",
+    "description": "rtertevdd",
+    "unit_price": "50.00",
+    "inventory": 500,
+    "last_update": "2024-07-01T12:26:18.103Z",
+    "collection": 2,
+    "promotions": []
+  }
+},
+{
+  "model": "store.product",
+  "pk": 4,
+  "fields": {
+    "title": "ice cream",
+    "slug": "ice-cream",
+    "description": "ervf dfdg",
+    "unit_price": "80.00",
+    "inventory": 100,
+    "last_update": "2024-07-01T12:26:42.281Z",
+    "collection": 2,
+    "promotions": [
+      1
+    ]
+  }
+},
+{
+  "model": "store.product",
+  "pk": 5,
+  "fields": {
+    "title": "cake",
+    "slug": "chocfgfdolate",
+    "description": "rtertfgfgfevdd",
+    "unit_price": "55.00",
+    "inventory": 50,
+    "last_update": "2024-07-03T12:58:50.256Z",
+    "collection": 2,
+    "promotions": []
+  }
+},
+{
+  "model": "store.customer",
+  "pk": 1,
+  "fields": {
+    "first_name": "nasim1",
+    "last_name": "hasan1",
+    "email": "nasim@naim.com",
+    "phone": "45345",
+    "birth_date": "2022-11-08",
+    "membership": "B"
+  }
+},
+{
+  "model": "store.customer",
+  "pk": 2,
+  "fields": {
+    "first_name": "neaz1",
+    "last_name": "uddin",
+    "email": "neaz@n.com",
+    "phone": "4534534",
+    "birth_date": "2022-10-05",
+    "membership": "S"
+  }
+},
+{
+  "model": "store.order",
+  "pk": 1,
+  "fields": {
+    "placed_at": "2024-07-01T12:29:21.672Z",
+    "payment_status": "P",
+    "customer": 1
+  }
+},
+{
+  "model": "store.order",
+  "pk": 8,
+  "fields": {
+    "placed_at": "2024-07-01T12:36:56.033Z",
+    "payment_status": "P",
+    "customer": 2
+  }
+},
+{
+  "model": "store.orderitem",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "product": 3,
+    "quantity": 2,
+    "unit_price": "43.00"
+  }
+},
+{
+  "model": "store.orderitem",
+  "pk": 2,
+  "fields": {
+    "order": 1,
+    "product": 4,
+    "quantity": 4,
+    "unit_price": "545.00"
+  }
+},
+{
+  "model": "store.orderitem",
+  "pk": 3,
+  "fields": {
+    "order": 8,
+    "product": 1,
+    "quantity": 1,
+    "unit_price": "80000.00"
+  }
+},
+{
+  "model": "store.orderitem",
+  "pk": 4,
+  "fields": {
+    "order": 8,
+    "product": 2,
+    "quantity": 2,
+    "unit_price": "45545.00"
+  }
+},
+{
+  "model": "store.address",
+  "pk": 1,
+  "fields": {
+    "street": "mohammadpur",
+    "city": "dhaka",
+    "customer": 1
+  }
+},
+{
+  "model": "store.address",
+  "pk": 2,
+  "fields": {
+    "street": "bosila",
+    "city": "dhaka",
+    "customer": 2
+  }
+},
+{
+  "model": "store.review",
+  "pk": 1,
+  "fields": {
+    "product": 5,
+    "name": "nasim",
+    "description": "food made of egg.",
+    "date": "2024-07-10"
+  }
+},
+{
+  "model": "store.review",
+  "pk": 4,
+  "fields": {
+    "product": 5,
+    "name": "hasan",
+    "description": "dfgdfgdfgd",
+    "date": "2024-07-10"
+  }
+}
+]
