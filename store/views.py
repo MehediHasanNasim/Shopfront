@@ -7,7 +7,7 @@ from django.db.models import Count
 from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import SearchFilter, OrderingFilter
-from rest_framework.mixins import CreateModelMixin
+from rest_framework.mixins import CreateModelMixin, RetrieveModelMixin, DestroyModelMixin
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet, GenericViewSet
 from rest_framework import status
@@ -71,9 +71,16 @@ class ReviewViewSet(ModelViewSet):
     
 
 '''don't need update & list model mixins'''
-class CartViewSet(CreateModelMixin, GenericViewSet):
-    queryset = Cart.objects.all()
+class CartViewSet(CreateModelMixin, 
+                  RetrieveModelMixin, 
+                  DestroyModelMixin, 
+                  GenericViewSet):
+    queryset = Cart.objects.prefetch_related('items__product').all()
     serializer_class = CartSerializer
+
+# class CartViewSet(ModelViewSet):
+#     queryset = Cart.objects.prefetch_related('items__product').all()
+#     serializer_class = CartSerializer
 
     # def destroy(self, request, *args, **kwargs):
     #     if Review.objects.filter(review_id=kwargs['pk']).count() > 0:
