@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'store',
     'tags',
     'likes',
-    'store_custom',
+    'core',
 
     'django_extensions'
 ]
@@ -169,3 +169,5 @@ REST_FRAMEWORK = {
     # 'PAGE_SIZE': 3
 
 }
+
+AUTH_USER_MODEL = 'core.User'
