@@ -174,6 +174,7 @@ REST_FRAMEWORK = {
 
 }
 
+<<<<<<< HEAD
 SIMPLE_JWT = {
    'AUTH_HEADER_TYPES': ('JWT',),
 }
@@ -185,3 +186,6 @@ DJOSER = {
         'user_create': 'core.serializers.UserCreateSerializer'
     }
 } 
+=======
+AUTH_USER_MODEL = 'core.User'
+>>>>>>> 183285ad160a1d3bdba337bb1085e66ed83e43f1
