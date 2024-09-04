@@ -42,12 +42,13 @@ INSTALLED_APPS = [
     'django_filters',
 
     'rest_framework',
+    'djoser',
 
     'play',
     'store',
     'tags',
     'likes',
-    'store_custom',
+    'core',
 
     'django_extensions'
 ]
@@ -164,8 +165,23 @@ GRAPH_MODELS = {
 
 
 REST_FRAMEWORK = {
-    'COERCE_DECIMAL_TO_STRING': False
+    'COERCE_DECIMAL_TO_STRING': False,
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
     # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     # 'PAGE_SIZE': 3
 
 }
+
+SIMPLE_JWT = {
+   'AUTH_HEADER_TYPES': ('JWT',),
+}
+
+AUTH_USER_MODEL = 'core.User'
+
+DJOSER = {
+    'SERIALIZERS': {
+        'user_create': 'core.serializers.UserCreateSerializer'
+    }
+} 

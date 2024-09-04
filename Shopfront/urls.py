@@ -25,5 +25,7 @@ admin.site.index_title = "Nasim"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('play/', include('play.urls')),
-    path('store/', include('store.urls'))
+    path('store/', include('store.urls')),
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.jwt')),
 ]
