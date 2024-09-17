@@ -108,11 +108,16 @@ class UpdateCartItemSerializer(serializers.ModelSerializer):
 
 
 class CustomerSerializer(serializers.ModelSerializer):
+<<<<<<< HEAD
     user_id = serializers.IntegerField(read_only=True)
+=======
+    user_id = serializers.IntegerField()
+>>>>>>> 4b1bc9611847f22ff561a805054d2305fbb22dd8
     class Meta:
         model = Customer
         fields = ['id', 'user_id', 'phone', 'birth_date', 'membership']
 
+<<<<<<< HEAD
 class OrderItemSerilizer(serializers.ModelSerializer):
     product = SimpleProductSerializer()
     class Meta:
@@ -125,6 +130,8 @@ class OrderSerializer(serializers.ModelSerializer):
     class Meta:
         model = Order
         fields = ['id', 'customer', 'placed_at', 'payment_status', 'items']
+=======
+>>>>>>> 4b1bc9611847f22ff561a805054d2305fbb22dd8
 
 
 ''' validation example'''
