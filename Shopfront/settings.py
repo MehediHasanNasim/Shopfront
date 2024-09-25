@@ -173,65 +173,29 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
-<<<<<<< HEAD
     # 'DEFAULT_PERMISSION_CLASSES': [
     #     'rest_framework.permissions.IsAuthenticated'
     # ]
-=======
-<<<<<<< HEAD
-    # 'DEFAULT_PERMISSION_CLASSES': [
-    #     'rest_framework.permissions.IsAuthenticated'
-    # ]
-=======
->>>>>>> 4b1bc9611847f22ff561a805054d2305fbb22dd8
->>>>>>> c05b93e92ee79022cda30f15f3de326f4cfa90e7
     # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     # 'PAGE_SIZE': 3
 
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> c05b93e92ee79022cda30f15f3de326f4cfa90e7
+
 from datetime import timedelta
 
 SIMPLE_JWT = {
    'AUTH_HEADER_TYPES': ('JWT',),
    "ACCESS_TOKEN_LIFETIME": timedelta(days=1),
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-SIMPLE_JWT = {
-   'AUTH_HEADER_TYPES': ('JWT',),
->>>>>>> 4b1bc9611847f22ff561a805054d2305fbb22dd8
->>>>>>> c05b93e92ee79022cda30f15f3de326f4cfa90e7
 }
 
 AUTH_USER_MODEL = 'core.User'
 
 DJOSER = {
     'SERIALIZERS': {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> c05b93e92ee79022cda30f15f3de326f4cfa90e7
         'user_create': 'core.serializers.UserCreateSerializer',
         'current_user': 'core.serializers.UserSerializer',
     }
 } 
 
 
-
-<<<<<<< HEAD
-=======
-=======
-        'user_create': 'core.serializers.UserCreateSerializer'
-    }
-} 
-=======
-AUTH_USER_MODEL = 'core.User'
->>>>>>> 183285ad160a1d3bdba337bb1085e66ed83e43f1
->>>>>>> 4b1bc9611847f22ff561a805054d2305fbb22dd8
->>>>>>> c05b93e92ee79022cda30f15f3de326f4cfa90e7

@@ -11,14 +11,9 @@ router.register('products', views.ProductViewSet, basename='products')
 router.register('collections', views.CollectionViewSet)
 router.register('carts', views.CartViewSet)
 router.register('customers', views.CustomerViewSet)
-<<<<<<< HEAD
 router.register('orders', views.OrderViewSet, basename='orders')
-=======
-<<<<<<< HEAD
-router.register('orders', views.OrderViewSet)
-=======
->>>>>>> 4b1bc9611847f22ff561a805054d2305fbb22dd8
->>>>>>> c05b93e92ee79022cda30f15f3de326f4cfa90e7
+
+
 # pprint(router.urls) 
 # ?collection_id=1 
 
