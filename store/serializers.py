@@ -120,11 +120,23 @@ class UpdateCartItemSerializer(serializers.ModelSerializer):
 
 
 class CustomerSerializer(serializers.ModelSerializer):
+<<<<<<< HEAD
     user_id = serializers.IntegerField(read_only=True)
+=======
+<<<<<<< HEAD
+    user_id = serializers.IntegerField(read_only=True)
+=======
+    user_id = serializers.IntegerField()
+>>>>>>> 4b1bc9611847f22ff561a805054d2305fbb22dd8
+>>>>>>> c05b93e92ee79022cda30f15f3de326f4cfa90e7
     class Meta:
         model = Customer
         fields = ['id', 'user_id', 'phone', 'birth_date', 'membership']
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c05b93e92ee79022cda30f15f3de326f4cfa90e7
 class OrderItemSerilizer(serializers.ModelSerializer):
     product = SimpleProductSerializer()
     class Meta:
@@ -137,6 +149,7 @@ class OrderSerializer(serializers.ModelSerializer):
     class Meta:
         model = Order
         fields = ['id', 'customer', 'placed_at', 'payment_status', 'items']
+<<<<<<< HEAD
 
 
 class UpdateOrderSerializer(serializers.ModelSerializer):
@@ -186,6 +199,12 @@ class CreateOrderSerializer(serializers.Serializer):
         
         
 
+=======
+=======
+>>>>>>> 4b1bc9611847f22ff561a805054d2305fbb22dd8
+
+
+>>>>>>> c05b93e92ee79022cda30f15f3de326f4cfa90e7
 ''' validation example'''
     # def validate(self, data):
     #     if data['password'] != data['confirm_password']:

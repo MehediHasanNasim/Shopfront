@@ -9,7 +9,14 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.decorators import action
 from rest_framework.filters import SearchFilter, OrderingFilter
 from rest_framework.mixins import CreateModelMixin, RetrieveModelMixin, DestroyModelMixin, UpdateModelMixin
+<<<<<<< HEAD
 from rest_framework.permissions import IsAuthenticated, AllowAny, IsAdminUser, DjangoModelPermissions
+=======
+<<<<<<< HEAD
+from rest_framework.permissions import IsAuthenticated, AllowAny, IsAdminUser, DjangoModelPermissions
+=======
+>>>>>>> 4b1bc9611847f22ff561a805054d2305fbb22dd8
+>>>>>>> c05b93e92ee79022cda30f15f3de326f4cfa90e7
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet, GenericViewSet
 from rest_framework import status
@@ -110,6 +117,10 @@ class CartItemViewSet(ModelViewSet):
                 .filter(cart_id=self.kwargs['cart_pk']) \
                 .select_related('product')
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c05b93e92ee79022cda30f15f3de326f4cfa90e7
 class CustomerViewSet(ModelViewSet):
     queryset = Customer.objects.all()
     serializer_class = CustomerSerializer
@@ -122,7 +133,11 @@ class CustomerViewSet(ModelViewSet):
 
     @action(detail=False, methods=['GET', 'PUT'], permission_classes=[IsAuthenticated])
     def me(self, request):
+<<<<<<< HEAD
         customer = Customer.objects.get(user_id=request.user.id)
+=======
+        (customer, created) = Customer.objects.get_or_create(user_id=request.user.id)
+>>>>>>> c05b93e92ee79022cda30f15f3de326f4cfa90e7
         if request.method == 'GET':
             serializer = CustomerSerializer(customer)
             return Response(serializer.data)
@@ -134,6 +149,7 @@ class CustomerViewSet(ModelViewSet):
         
 
 class OrderViewSet(ModelViewSet):
+<<<<<<< HEAD
     http_method_names = ['get', 'post', 'patch', 'delete', 'head', 'options']
     
     def get_permissions(self):
@@ -176,6 +192,17 @@ class OrderViewSet(ModelViewSet):
 
 
 
+=======
+    queryset = Order.objects.all()
+    serializer_class = OrderSerializer
+=======
+class CustomerViewSet(CreateModelMixin, RetrieveModelMixin, UpdateModelMixin, GenericViewSet):
+    queryset = Customer.objects.all()
+    serializer_class = CustomerSerializer
+
+
+>>>>>>> 4b1bc9611847f22ff561a805054d2305fbb22dd8
+>>>>>>> c05b93e92ee79022cda30f15f3de326f4cfa90e7
 
 # class CartViewSet(ModelViewSet):
 #     queryset = Cart.objects.prefetch_related('items__product').all()

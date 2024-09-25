@@ -31,8 +31,12 @@ urlpatterns = [
     path('store/', include('store.urls')),
     path('auth/', include('djoser.urls')),
     path('auth/', include('djoser.urls.jwt')),
+<<<<<<< HEAD
 ] 
 
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+=======
+]
+>>>>>>> c05b93e92ee79022cda30f15f3de326f4cfa90e7
