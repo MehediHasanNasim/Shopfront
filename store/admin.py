@@ -2,13 +2,23 @@ from typing import Any
 from django.contrib import admin
 from django.db.models.query import QuerySet
 from django.http import HttpRequest
+from django.utils.html import format_html, urlencode
 from .models import *
 from django.db.models import Count
 
 
 # Register your models here.
 
-
+class ProductImageInline(admin.TabularInline):
+    model = ProductImage
+    readonly_fields = ['thumbnail']
+    
+    def thumbnail(self, instance):
+        if instance.image.name != '':
+            return format_html(f'<img src="{instance.image.url}" class="thumbnail"/>')
+        return ''
+     
+    
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
 
@@ -18,6 +28,7 @@ class ProductAdmin(admin.ModelAdmin):
     prepopulated_fields = {
         'slug': ['title']
     }
+    inlines = [ProductImageInline]
     list_display = ['title', 'unit_price', 'inventory_status', 'collection']
     list_editable = ['unit_price']
     list_filter = ['collection', 'last_update']
@@ -30,13 +41,19 @@ class ProductAdmin(admin.ModelAdmin):
         if product.inventory < 15000:
             return 'LOW'
         return 'Ok'
+    
+    class Media:
+        css = {
+            'all': ['store/styles.css']
+        }
 
 
 @admin.register(Customer)
 class CustomerAdmin(admin.ModelAdmin):
     list_display = ['first_name', 'last_name', 'membership']
     list_editable = ['membership']
-    ordering = ['first_name', 'last_name']
+    list_select_related = ['user']
+    ordering = ['user__first_name', 'user__last_name']
     search_fields = ['first_name__istartswith', 'last_name__istartswith']
 
 
